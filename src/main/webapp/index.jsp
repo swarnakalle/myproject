@@ -4,25 +4,25 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Butterfly Shop — Modern E-Commerce</title>
+    <title>WildMart — Animal Theme E-Commerce</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
-            --bg: linear-gradient(135deg, #fff9fc, #f6f3ff, #eefcff);
-            --primary: #4b2e83;
-            --secondary: #ff69b4;
-            --accent: #7c4dff;
-            --light-accent: #b388ff;
-            --surface: rgba(255, 255, 255, 0.85);
-            --card: rgba(255, 255, 255, 0.92);
-            --muted: #6f6b7d;
-            --success: #28a745;
-            --radius: 18px;
+            --bg: linear-gradient(135deg, #fff8ef, #f5efe3, #eef7eb);
+            --primary: #3f2d1d;
+            --secondary: #c97a2b;
+            --accent: #5f8f2f;
+            --accent-dark: #42651f;
+            --surface: rgba(255, 255, 255, 0.88);
+            --card: rgba(255, 255, 255, 0.94);
+            --muted: #6f655d;
+            --success: #2e7d32;
+            --radius: 20px;
             --container: 1200px;
-            --shadow: 0 10px 30px rgba(91, 61, 136, 0.12);
+            --shadow: 0 12px 28px rgba(63, 45, 29, 0.12);
         }
 
         * {
@@ -53,9 +53,9 @@
             position: sticky;
             top: 0;
             z-index: 50;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 248, 239, 0.84);
             backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(124, 77, 255, 0.08);
+            border-bottom: 1px solid rgba(95, 143, 47, 0.08);
         }
 
         .header-inner {
@@ -97,8 +97,8 @@
         }
 
         nav.main-nav a:hover {
-            background: rgba(179, 136, 255, 0.12);
-            color: var(--secondary);
+            background: rgba(95, 143, 47, 0.12);
+            color: var(--accent-dark);
         }
 
         .search {
@@ -164,7 +164,7 @@
 
         .hero {
             position: relative;
-            min-height: 500px;
+            min-height: 520px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -172,19 +172,19 @@
             color: white;
             overflow: hidden;
             background:
-                linear-gradient(135deg, rgba(75, 46, 131, 0.8), rgba(255, 105, 180, 0.55)),
-                url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+                linear-gradient(135deg, rgba(63, 45, 29, 0.76), rgba(95, 143, 47, 0.45)),
+                url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
             border-bottom-left-radius: 28px;
             border-bottom-right-radius: 28px;
         }
 
         .hero::before,
         .hero::after {
-            content: "🦋";
+            content: "🐾";
             position: absolute;
-            font-size: 70px;
+            font-size: 72px;
             opacity: 0.18;
-            animation: floatButterfly 6s ease-in-out infinite;
+            animation: floatPaw 6s ease-in-out infinite;
         }
 
         .hero::before {
@@ -198,18 +198,18 @@
             animation-delay: 2s;
         }
 
-        @keyframes floatButterfly {
+        @keyframes floatPaw {
             0%, 100% {
                 transform: translateY(0px) rotate(0deg);
             }
             50% {
-                transform: translateY(-18px) rotate(8deg);
+                transform: translateY(-16px) rotate(8deg);
             }
         }
 
         .hero h1 {
             font-family: Poppins, sans-serif;
-            font-size: 48px;
+            font-size: 50px;
             margin-bottom: 12px;
         }
 
@@ -235,7 +235,7 @@
         .btn-primary {
             background: linear-gradient(135deg, var(--secondary), var(--accent));
             color: white;
-            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.25);
+            box-shadow: 0 10px 25px rgba(201, 122, 43, 0.24);
         }
 
         .btn-primary:hover {
@@ -243,9 +243,9 @@
         }
 
         .btn-ghost {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.14);
             color: white;
-            border: 1px solid rgba(255, 255, 255, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.34);
         }
 
         .section {
@@ -278,13 +278,12 @@
 
         .cat-card {
             background: var(--card);
-            backdrop-filter: blur(10px);
             border-radius: var(--radius);
             padding: 22px 18px;
             text-align: center;
             box-shadow: var(--shadow);
             transition: 0.3s ease;
-            border: 1px solid rgba(124, 77, 255, 0.08);
+            border: 1px solid rgba(95, 143, 47, 0.08);
         }
 
         .cat-card:hover {
@@ -298,8 +297,8 @@
             display: grid;
             place-items: center;
             border-radius: 50%;
-            background: linear-gradient(135deg, #ffd6ec, #e9dcff);
-            color: var(--accent);
+            background: linear-gradient(135deg, #fbe3c3, #e4f2d2);
+            color: var(--secondary);
             font-size: 24px;
         }
 
@@ -316,7 +315,7 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            border: 1px solid rgba(124, 77, 255, 0.08);
+            border: 1px solid rgba(95, 143, 47, 0.08);
         }
 
         .product:hover {
@@ -375,13 +374,13 @@
             padding: 12px;
             border-radius: 12px;
             cursor: pointer;
-            background: linear-gradient(135deg, var(--accent), var(--primary));
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
             color: white;
             font-weight: 700;
         }
 
         .wish-btn {
-            border: 1px solid rgba(124, 77, 255, 0.15);
+            border: 1px solid rgba(95, 143, 47, 0.14);
             background: white;
             padding: 12px;
             border-radius: 12px;
@@ -393,7 +392,7 @@
             display: flex;
             gap: 20px;
             align-items: center;
-            background: linear-gradient(135deg, #fff0f7, #f4eeff);
+            background: linear-gradient(135deg, #fff3df, #eef8df);
             border-radius: 24px;
             overflow: hidden;
             box-shadow: var(--shadow);
@@ -413,6 +412,7 @@
             display: flex;
             gap: 12px;
             margin: 22px 0;
+            flex-wrap: wrap;
         }
 
         .time-box {
@@ -447,7 +447,7 @@
         }
 
         .newsletter {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, var(--primary), var(--accent));
             color: white;
             border-radius: 24px;
             padding: 36px;
@@ -458,10 +458,10 @@
 
         .newsletter::before,
         .newsletter::after {
-            content: "🦋";
+            content: "🐾";
             position: absolute;
-            font-size: 50px;
-            opacity: 0.16;
+            font-size: 52px;
+            opacity: 0.14;
         }
 
         .newsletter::before {
@@ -554,8 +554,8 @@
             <div style="display:flex;align-items:center;gap:18px;">
                 <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
                 <a class="brand" href="#">
-                    <i class="fas fa-butterfly"></i>
-                    <span>ButterflyShop</span>
+                    <i class="fas fa-paw"></i>
+                    <span>WildMart</span>
                 </a>
             </div>
 
@@ -565,13 +565,13 @@
                     <li><a href="#"><i class="fas fa-th-large"></i> Categories</a></li>
                     <li><a href="#"><i class="fas fa-fire"></i> Trending</a></li>
                     <li><a href="#deals"><i class="fas fa-tag"></i> Deals</a></li>
-                    <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#about"><i class="fas fa-leaf"></i> About</a></li>
                 </ul>
             </nav>
 
             <div style="display:flex;align-items:center;gap:14px;">
                 <div class="search">
-                    <input type="search" id="searchInput" placeholder="Search beautiful products..." />
+                    <input type="search" id="searchInput" placeholder="Search wild products..." />
                     <button class="icon-btn" id="searchBtn"><i class="fas fa-search"></i></button>
                 </div>
 
@@ -604,8 +604,8 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Fly Into Elegant Shopping</h1>
-                <p>Explore premium fashion, gadgets, and accessories in a dreamy butterfly-inspired shopping experience.</p>
+                <h1>Bring Home the Wild Style</h1>
+                <p>Explore animal-inspired fashion, gadgets, accessories, and nature-loving picks in a bold jungle-themed shopping experience.</p>
                 <div>
                     <button class="btn btn-primary" id="shopNow">Shop Now <i class="fas fa-arrow-right"></i></button>
                     <button class="btn btn-ghost" id="exploreDeals">Explore Deals</button>
@@ -616,7 +616,7 @@
         <section class="section container">
             <div class="title">
                 <h2>Shop by Category</h2>
-                <p class="muted">Soft, stylish, and curated for modern shoppers.</p>
+                <p class="muted">Curated collections with a wild and earthy style.</p>
             </div>
             <div class="grid categories" id="categoriesGrid"></div>
         </section>
@@ -624,7 +624,7 @@
         <section class="section container">
             <div class="title">
                 <h2>Trending Products</h2>
-                <p class="muted">Handpicked favorites flying off the shelves.</p>
+                <p class="muted">Popular picks from the jungle of style.</p>
             </div>
             <div class="grid products" id="productsGrid"></div>
         </section>
@@ -632,14 +632,14 @@
         <section id="deals" class="section container">
             <div class="title">
                 <h2>Flash Sale</h2>
-                <p class="muted">Flutter in fast before these offers disappear.</p>
+                <p class="muted">Snag these deals before they run away.</p>
             </div>
 
             <div class="deal">
                 <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80" alt="Deal product">
                 <div class="content">
-                    <h3>MacBook Air M2</h3>
-                    <p class="muted">Lightweight, elegant, and powerful for your everyday creativity.</p>
+                    <h3>Explorer Laptop Bundle</h3>
+                    <p class="muted">Powerful, lightweight, and ready for every creative adventure.</p>
 
                     <div class="timer">
                         <div class="time-box">
@@ -662,7 +662,7 @@
 
                     <div style="display:flex;align-items:center;gap:12px;">
                         <div class="price">$999 <span class="old-price">$1,199</span></div>
-                        <div style="background:#ff4f81;color:white;padding:6px 10px;border-radius:10px;font-weight:700">-17%</div>
+                        <div style="background:#c97a2b;color:white;padding:6px 10px;border-radius:10px;font-weight:700">-17%</div>
                     </div>
 
                     <p style="margin-top:10px;">Only <strong>12</strong> items left at this price.</p>
@@ -674,13 +674,13 @@
         <section class="section container">
             <div class="title">
                 <h2>What our customers say</h2>
-                <p class="muted">Loved by shoppers everywhere.</p>
+                <p class="muted">Loved by shoppers with a wild side.</p>
             </div>
 
             <div class="testimonials">
                 <div class="testimonial">
                     <div class="rating">★★★★★</div>
-                    <p>"The butterfly design feels so premium and the shopping experience is beautiful."</p>
+                    <p>"The earthy colors and animal theme make this shop feel unique and premium."</p>
                     <div style="display:flex;align-items:center;gap:10px">
                         <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80" alt="avatar">
                         <div>
@@ -692,7 +692,7 @@
 
                 <div class="testimonial">
                     <div class="rating">★★★★☆</div>
-                    <p>"Very clean UI, lovely colors, and smooth shopping flow."</p>
+                    <p>"Beautiful cards, smooth shopping flow, and a fun jungle vibe."</p>
                     <div style="display:flex;align-items:center;gap:10px">
                         <img src="https://images.unsplash.com/photo-1546456073-6712f79251bb?auto=format&fit=crop&w=80&q=80" alt="avatar">
                         <div>
@@ -706,8 +706,8 @@
 
         <section class="section container">
             <div class="newsletter">
-                <h3>Stay in the loop</h3>
-                <p>Subscribe for exclusive offers and dreamy new arrivals.</p>
+                <h3>Join the Pack</h3>
+                <p>Subscribe for exclusive offers and fresh arrivals from the wild collection.</p>
                 <form id="newsletterForm" style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;" onsubmit="return false;">
                     <input id="newsletterEmail" type="email" placeholder="Enter your email" required>
                     <button class="btn btn-primary" id="subscribeBtn">Subscribe</button>
@@ -720,8 +720,8 @@
     <footer>
         <div class="container" style="display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start;justify-content:space-between">
             <div style="max-width:360px">
-                <div style="font-weight:800;font-size:20px;color:var(--primary)">ButterflyShop</div>
-                <p class="muted" style="margin-top:8px">A graceful e-commerce demo with a butterfly-inspired modern UI.</p>
+                <div style="font-weight:800;font-size:20px;color:var(--primary)">WildMart</div>
+                <p class="muted" style="margin-top:8px">A bold e-commerce demo with an animal-inspired modern UI.</p>
             </div>
 
             <div style="display:flex;gap:40px;flex:1;justify-content:flex-end;flex-wrap:wrap">
@@ -736,96 +736,96 @@
             </div>
         </div>
 
-        <div style="text-align:center;margin-top:22px;font-size:13px">© <span id="year"></span> ButterflyShop. All rights reserved.</div>
+        <div style="text-align:center;margin-top:22px;font-size:13px">© <span id="year"></span> WildMart. All rights reserved.</div>
     </footer>
 
     <script>
         const CATEGORIES = [
-            { id: 'phones', name: 'Smartphones', icon: 'fa-mobile-alt' },
-            { id: 'laptops', name: 'Laptops', icon: 'fa-laptop' },
-            { id: 'clothing', name: 'Clothing', icon: 'fa-shirt' },
-            { id: 'gadgets', name: 'Gadgets', icon: 'fa-headphones' },
-            { id: 'footwear', name: 'Footwear', icon: 'fa-shoe-prints' },
-            { id: 'accessories', name: 'Accessories', icon: 'fa-gem' }
+            { id: 'wild-tech', name: 'Wild Tech', icon: 'fa-mobile-alt' },
+            { id: 'safari-gear', name: 'Safari Gear', icon: 'fa-bag-shopping' },
+            { id: 'animal-fashion', name: 'Animal Fashion', icon: 'fa-shirt' },
+            { id: 'jungle-audio', name: 'Jungle Audio', icon: 'fa-headphones' },
+            { id: 'outdoor-steps', name: 'Outdoor Steps', icon: 'fa-shoe-prints' },
+            { id: 'nature-accessories', name: 'Nature Accessories', icon: 'fa-gem' }
         ];
 
         const PRODUCTS = [
             {
                 id: 1,
-                title: 'iPhone 14 Pro Max',
-                price: 1099,
-                oldPrice: 1199,
+                title: 'Leopard Print Phone Case',
+                price: 49,
+                oldPrice: 69,
                 rating: 5,
                 reviews: 128,
                 badge: 'New',
-                img: 'https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=600&q=80',
-                category: 'phones'
+                img: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80',
+                category: 'wild-tech'
             },
             {
                 id: 2,
-                title: 'MacBook Pro 14"',
-                price: 1999,
+                title: 'Explorer Laptop Sleeve',
+                price: 89,
                 rating: 4,
                 reviews: 86,
                 img: 'https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=600&q=80',
-                category: 'laptops'
+                category: 'safari-gear'
             },
             {
                 id: 3,
-                title: 'Apple Watch Series 8',
+                title: 'Tiger Stripe Smart Watch',
                 price: 349,
                 oldPrice: 399,
                 rating: 5,
                 reviews: 214,
                 badge: '-25%',
-                img: 'https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?auto=format&fit=crop&w=600&q=80',
-                category: 'accessories'
+                img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80',
+                category: 'nature-accessories'
             },
             {
                 id: 4,
-                title: 'Nike Air Max 270',
+                title: 'Forest Trail Sneakers',
                 price: 150,
                 rating: 4,
                 reviews: 53,
-                img: 'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=600&q=80',
-                category: 'footwear'
+                img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80',
+                category: 'outdoor-steps'
             },
             {
                 id: 5,
-                title: 'Sony A7 IV Camera',
-                price: 2499,
+                title: 'Wild Lens Camera',
+                price: 999,
                 rating: 5,
                 reviews: 42,
-                img: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80',
-                category: 'gadgets'
+                img: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80',
+                category: 'wild-tech'
             },
             {
                 id: 6,
-                title: 'Luxury Perfume',
+                title: 'Woodland Perfume',
                 price: 120,
                 rating: 5,
                 reviews: 189,
-                img: 'https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80',
-                category: 'accessories'
+                img: 'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80',
+                category: 'nature-accessories'
             },
             {
                 id: 7,
-                title: 'Travel Backpack',
+                title: 'Safari Travel Backpack',
                 price: 79,
                 oldPrice: 99,
                 rating: 4,
                 reviews: 67,
-                img: 'https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=600&q=80',
-                category: 'accessories'
+                img: 'https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=600&q=80',
+                category: 'safari-gear'
             },
             {
                 id: 8,
-                title: 'Sony WH-1000XM5',
+                title: 'Wolf Sound Headphones',
                 price: 399,
                 rating: 5,
                 reviews: 156,
-                img: 'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=600&q=80',
-                category: 'gadgets'
+                img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80',
+                category: 'jungle-audio'
             }
         ];
 
@@ -873,7 +873,7 @@
                 const el = document.createElement('article');
                 el.className = 'product';
                 el.innerHTML = `
-                    ${p.badge ? `<div style="position:absolute;top:14px;left:14px;z-index:2;"><span style="background:${p.badge.startsWith('-') ? '#ff4f81' : '#28a745'};color:white;padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px;">${p.badge}</span></div>` : ''}
+                    ${p.badge ? `<div style="position:absolute;top:14px;left:14px;z-index:2;"><span style="background:${p.badge.startsWith('-') ? '#c97a2b' : '#2e7d32'};color:white;padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px;">${p.badge}</span></div>` : ''}
                     <img src="${p.img}" alt="${escapeHtml(p.title)}">
                     <div class="product-body">
                         <h5>${escapeHtml(p.title)}</h5>
@@ -945,7 +945,7 @@
 
             msg.style.display = 'block';
             msg.style.color = '#ffffff';
-            msg.textContent = 'Thanks! You are subscribed.';
+            msg.textContent = 'Thanks! You joined the pack.';
             document.getElementById('newsletterEmail').value = '';
             setTimeout(() => {
                 msg.style.display = 'none';
